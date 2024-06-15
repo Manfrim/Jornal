@@ -1,0 +1,304 @@
+@font-face {
+	font-family: 'Open_Sans_Regular';
+	src: url("../fonts/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+textarea{
+    height: 300px;
+}
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+#logotipo{
+    margin-left: 0.6%;
+    margin-top: 0.6%;
+    position: absolute;
+    z-index: 2;
+    justify-content: left;
+    transition: 1s;
+}
+#logotipo:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+}
+#opcoes{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+#opcoes a{
+    font-family: "Open_Sans_Regular";  
+    text-decoration: none;
+
+}
+#opcoes a:hover{
+    color: rgb(101, 101, 228);
+}
+
+
+
+/* pagina inicial */
+
+#imagem_fundo{
+    position: relative;
+    height: 700px;
+    width: 100vw;
+    z-index: 0;
+    margin-top: -56px;
+}
+#separador{
+    position: relative;
+    margin-top: 70px;
+}
+#separador h1{
+    font-size: 2em;
+    margin-top: 0px;
+    transition: 3s;
+}
+#separador h1:hover{
+    color: rgba(0, 0, 100, 1);
+}
+#linha-separador{
+    width: 100%;
+    border: none;
+    height: 8px;
+    background-color: blue;
+}
+#materias-principais{
+    margin-top: 70px;
+}
+#materias-principais img{
+    max-width: 382px;
+    max-height: 195.27px;
+    transition: 0.4s;
+}
+#materias-principais img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    border-radius: 4%;
+}
+#materias-principais .row{
+    justify-content: space-evenly;
+}
+#materias-principais .card{
+    border-color: #000080;
+    border-width: 1px;
+}
+#resumos-materias{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#pensamento_dia{
+    margin-top: 40px;
+}
+#pensamento_dia img{
+    border-radius: 30%;
+    transition: 1s;
+}
+#pensamento_dia img:hover{
+    transform: scale(1.2);
+}
+#pensamento_dia p{
+    font-size: 1.5em;
+}
+#pensamento_dia h2{
+    font-family: "Open_Sans_Regular";
+    transition: 2s;
+}
+#pensamento_dia h2:hover{
+    color: rgba(0, 0, 100, 1);
+}
+#pensamento_dia h3{
+    font-family: "Open_Sans_Regular";
+}
+#pensamento_dia p{
+    font-family: "Open_Sans_Regular";
+}
+
+
+/* pagina de login */
+
+#estrutura-login{
+    position: relative;
+    display: flex;
+}
+
+/*Editor de materias*/
+
+#botoes-editor-materia{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/*pagina de ler materias*/
+#container-ler-materia{
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+}
+#container-ler-materia h2{
+    font-family: "Open_Sans_Regular";
+    font-size: 3rem;
+}
+#container-ler-materia img{
+    position: relative;
+    text-align: center;
+    border-radius: 5%;
+    margin-top: 20px;
+    max-width: 60vw;
+}
+#container-ler-materia p{
+    color: #2B2B2B;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+#container-ler-materia a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: "Open_Sans_Regular";
+    display: flex;
+    width: 215px;
+    height: 20px;
+    transition: 1s;
+    color: #2B2B2B;
+}
+#container-ler-materia a p:hover{
+    color: rgba(0, 0, 100, 1);
+}
+#container-ler-materia .container{
+    max-width: 80vw;
+}
+
+
+
+/*pagina do escritor*/
+#container-escritor{
+    position: relative;
+    margin-top: 70px;
+    height: 700px;
+}
+#container-escritor .row{
+    justify-content: center;
+}
+#container-escritor h2{
+    font-family: "Open_Sans_Regular";
+    text-align: center;
+    transition: 3s;
+    opacity: 0; 
+    transform: translate(-100%, 0); 
+    animation: slideIn 1.5s forwards;
+}
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translate(-100%, 0);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 50%); /* No final da animação, o título está no centro vertical */
+    }
+  }
+#container-escritor h2:hover{
+    color: darkblue;
+}
+#container-escritor img{
+    max-height: 500px;
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 35px;
+    border-radius: 50%;
+    transition: 2s;
+}
+#instagram, #linkedin{
+    color: #2B2B2B;
+}
+#instagram{
+    transition: 0.5s;
+}
+#instagram:hover{
+    color: #F60291;
+    transform: translateY(-8px);
+    scale: 1.1;
+}
+#linkedin{
+    transition: 0.5s;
+}
+#linkedin:hover{
+    color: #0B66C3;
+    transform: translateY(-8px);
+    scale: 1.1;
+}
+#container-escritor img:hover{
+    opacity: 0.8;
+}
+#container-escritor p{
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+
+/*pagina materias */
+#container-materias{
+    margin-top: 10%;
+}
+#container-materias .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 10.0rem;
+}
+.container-materias-img{
+    max-width: 382px;
+    max-height: 195.27px;
+    transition: 0.4s;
+}
+#container-materias img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    border-radius: 4%;
+}
+#container-materias .card{
+    border-color: #000080;
+    border-width: 1px;
+}
+
+
+/*footer*/
+#footer{
+    margin-top: 10%;
+}
+#footer hr{
+    background-color: #000000; /* Define a cor de fundo da linha */
+    border: none;
+    height: 5px;
+    width: 100%;
+}
+#footer ul{
+    list-style-type: none;
+}
+#footer a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #2B2B2B;
+}
+#footer li{
+    margin-bottom: 10px;
+}
+#footer i{
+    margin-right: 10px;
+}
